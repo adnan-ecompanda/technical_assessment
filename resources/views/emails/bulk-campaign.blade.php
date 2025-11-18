@@ -1,11 +1,10 @@
-@php use Illuminate\Support\Str; @endphp
 <!doctype html>
 <html>
 <head>
     <meta charset="utf-8">
-    <title>{{ $body ? Str::limit($body, 40) : '' }}</title>
+    <title>{{ $campaign->subject }}</title>
 </head>
 <body>
-    <p>{!! nl2br(e($body)) !!}</p>
+    <p>{!! nl2br(e($campaign->body)) !!}</p>
 </body>
 </html>
